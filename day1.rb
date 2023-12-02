@@ -12,6 +12,7 @@ lines = File.read('day1.txt').strip.split("\n")
 #require 'pp'
 #pp lines
 
+# part 1
 p lines.map { |l| digits = l.scan(/\d/); (digits.first + digits.last).to_i }.sum
 
 DIGITS = %w[1 2 3 4 5 6 7 8 9]
@@ -25,6 +26,8 @@ def to_digit(word)
   end
 end
 
+# This was my personal solution to part 2, but there is a simpler solution below
+# that uses lookaheads.
 results = lines.map do |line|
   first_word = (DIGITS + WORDS).sort_by { |w| line.index(w) || 1000 }.first
   first_digit = to_digit(first_word)
@@ -36,5 +39,12 @@ results = lines.map do |line|
   raise 'wat' if combined.size != 2
 
   combined.to_i
+end
+puts results.sum
+
+# This is the simpler solution that Kyle and Tanner helped me with!
+results = lines.map do |line|
+  words = line.scan(/(?=(\d|one|two|three|four|five|six|seven|eight|nine))/).map(&:first)
+  "#{to_digit(words.first)}#{to_digit(words.last)}".to_i
 end
 puts results.sum
