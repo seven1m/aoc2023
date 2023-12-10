@@ -1,4 +1,4 @@
-lines = File.read('day2.txt').strip.split("\n")
+lines = File.read('day02.txt').strip.split("\n")
 
 #lines = <<END.strip.split("\n")
 #Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green

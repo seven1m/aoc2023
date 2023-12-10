@@ -1,4 +1,4 @@
-lines = File.read('day6.txt').strip.split("\n")
+lines = File.read('day06.txt').strip.split("\n")
 
 #lines = <<END.strip.split("\n")
 #Time:      7  15   30

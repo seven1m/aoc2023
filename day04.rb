@@ -1,4 +1,4 @@
-lines = File.read('day4.txt').strip.split("\n")
+lines = File.read('day04.txt').strip.split("\n")
 
 #lines = <<END.strip.split("\n")
 #Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53

@@ -1,4 +1,4 @@
-lines = File.read('day5.txt').strip.split("\n")
+lines = File.read('day05.txt').strip.split("\n")
 
 #lines = <<END.strip.split("\n")
 #seeds: 79 14 55 13

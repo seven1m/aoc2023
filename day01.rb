@@ -1,4 +1,4 @@
-lines = File.read('day1.txt').strip.split("\n")
+lines = File.read('day01.txt').strip.split("\n")
 
 #lines = <<END.strip.split("\n")
 #two1nine

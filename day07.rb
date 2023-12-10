@@ -1,4 +1,4 @@
-lines = File.read('day7.txt').strip.split("\n")
+lines = File.read('day07.txt').strip.split("\n")
 
 #lines = <<END.strip.split("\n")
 #32T3K 765
